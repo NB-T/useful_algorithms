@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <vector>
-#include <Tree.h>
+#include "Tree.h"
 
 // store post-order traversal of tree in vector
 void postOrder(TreeNode* root, vector<int>& v)
