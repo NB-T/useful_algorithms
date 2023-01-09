@@ -8,7 +8,7 @@ using namespace std;
 void preOrder(TreeNode* root, vector<int>& v)
 {
 	if (!root) return;
-	v.push_back(root);
-	inOrder(root->left, v);
-	inOrder(root->right, v);
+	v.push_back(root->val);
+	preOrder(root->left, v);
+	preOrder(root->right, v);
 }
