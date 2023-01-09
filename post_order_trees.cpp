@@ -6,7 +6,7 @@
 void postOrder(TreeNode* root, vector<int>& v)
 {
 	if (!root) return;
-	inOrder(root->left, v);
-	inOrder(root->right, v);
-	v.push_back(root);
+	postOrder(root->left, v);
+	postOrder(root->right, v);
+	v.push_back(root->val);
 }
