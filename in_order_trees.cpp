@@ -9,7 +9,7 @@ void inOrder(TreeNode* root, vector<int>& v)
 {
 	if (!root) return;
 	inOrder(root->left, v);
-	v.push_back(root);
+	v.push_back(root->val);
 	inOrder(root->right, v);
 }
 
