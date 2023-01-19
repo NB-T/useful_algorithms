@@ -2,7 +2,7 @@
 
 // returns maximum subarray sum
 int kadane(const vector<int>& nums) {
-	int ans = -10001;
+	int ans = INT_MIN;
 	int s = 0;
 	for (int i : nums)
 	{
